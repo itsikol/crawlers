@@ -3,7 +3,6 @@ import requests
 f=open("catlink.txt","w+")
 r=requests.get("http://www.amazon.in/gp/site-directory/ref=nav_shopall_fullstore")
 data=r.text
-
 soup=BeautifulSoup(data)
 tbl = soup.find('table',{'id':'shopAllLinks'})
 lis = tbl.find_all("li")
