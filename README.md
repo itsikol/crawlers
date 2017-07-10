@@ -1,2 +1,2 @@
 # crawlers
-crawlers written in python
+web crawlers written in python
